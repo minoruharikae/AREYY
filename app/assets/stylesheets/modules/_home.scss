@@ -9,6 +9,7 @@
  }
  .category {
    width: 100%;
+   min-height: 100vh;
    padding: 0 0 40px;
    &--main {
      margin: 40px;
@@ -65,7 +66,7 @@
        justify-content: space-around;
        position: relative;
        &__ring {
-         background-image: url(ri);
+         background-image: url(ri.jpeg);
          height: 35vh;
          width: 20vw;
          border-radius: 50%;
@@ -84,7 +85,7 @@
          }
        }
        &__brace {
-         background-image: url(bules);
+         background-image: url(bules.jpeg);
          height: 35vh;
          width: 20vw;
          border-radius: 50%;
@@ -204,7 +205,7 @@
             }
           }
           &__earr {
-            background-image: url(iya);
+            background-image: url(iya.jpeg);
             height: 60px;
             width: 60px;
             border-radius: 50%;
@@ -226,7 +227,7 @@
           justify-content: space-around;
           position: relative;
           &__ring {
-            background-image: url(ri);
+            background-image: url(ri.jpeg);
             height: 60px;
             width: 60px;
             border-radius: 50%;
@@ -242,7 +243,7 @@
             }
           }
           &__brace {
-            background-image: url(bules);
+            background-image: url(bules.jpeg);
             height: 60px;
             width: 60px;
             border-radius: 50%;
