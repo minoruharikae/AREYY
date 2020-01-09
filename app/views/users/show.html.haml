@@ -1,0 +1,43 @@
+= render 'home/header'
+.mypage
+  .mypage--main
+    .mypage--main__box
+      .mypage--main__box__head
+        %h1
+          Owner Profile
+      .mypage--main__box__content
+        %ul
+          名前
+        %li
+          = @user.name
+        %ul
+          birthday
+        %li
+          = @user.birthday
+        %ul
+          age
+        %li
+          = @user.age
+        %h2
+          comment
+        %text
+          = @user.comment
+    .mypage--main__side
+      .mypage--main__side__img
+      .mypage--main__side__list
+        .mypage--main__side__list__edit
+          =link_to "Edit Profile", edit_user_path(current_user.id), class:'editpath'
+        .mypage--main__side__list__pierexhibition
+          = link_to "Piercing Exhibition", new_piercing_path, class: "pier_exhibition"
+        .mypage--main__side__list__earrexhibition
+          = link_to "Earring Exhibition", new_earring_path, class: "earr_exhibition"
+        .mypage--main__side__list__ringexhibition
+          = link_to "Ring Exhibition", new_ring_path, class: "ring_exhibition"
+        .mypage--main__side__list__breceexhibition
+          = link_to "Brecelet Exhibition", new_brecelet_path, class: "brece_exhibition"
+        .mypage--main__side__list__nacexhibition
+          = link_to "Necklace Exhibition", new_necklace_path, class: "nac_exhibition"
+  = render 'home/footer'
+
+     
+      

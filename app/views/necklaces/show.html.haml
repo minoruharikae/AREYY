@@ -1,0 +1,34 @@
+= render 'home/header'
+.necdate
+  .necdate__box
+    .necdate__box--img
+      - if @necklace.image?
+        = image_tag @necklace.image.url
+    .necdate__box--head
+      %ul
+        Details
+    .necdate__box--list
+      %p
+        = @necklace.name
+    .necdate__box--price
+      ¥
+      %ul
+        = @necklace.price.to_s(:delimited)
+    .necdate__box--size
+      %li
+        size
+      %ul
+        = @necklace.size
+      %li
+        color
+      %ul
+        = @necklace.color
+    .necdate__box--explain
+      %p
+        = @necklace.explain
+    .necdate__box--links
+      =link_to"Piercing", piercings_path, class:'index__piercing'
+      =link_to "Earring", earrings_path, class:'index__earring'
+      =link_to "Ring", rings_path, class:'index__ring'
+      =link_to"Bracelet", brecelets_path, class:'index__bracelet'
+= render 'home/footer'

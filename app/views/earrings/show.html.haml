@@ -1,0 +1,34 @@
+= render 'home/header'
+.earrdate
+  .earrdate__box
+    .earrdate__box--img
+      - if @earring.image?
+        = image_tag @earring.image.url
+    .earrdate__box--head
+      %ul
+        Details
+    .earrdate__box--list
+      %p
+        = @earring.name
+    .earrdate__box--price
+      ¥
+      %ul
+        = @earring.price.to_s(:delimited)
+    .earrdate__box--size
+      %li
+        size
+      %ul
+        = @earring.size
+      %li
+        color
+      %ul
+        = @earring.color
+    .earrdate__box--explain
+      %p
+        = @earring.explain
+    .earrdate__box--links
+      =link_to "Piercing", piercings_path, class:'index__piercing'
+      =link_to "Ring", rings_path, class:'index__ring'
+      =link_to"Bracelet", brecelets_path, class:'index__bracelet'
+      =link_to"Necklace", necklaces_path, class:'index__necklace'
+= render 'home/footer'

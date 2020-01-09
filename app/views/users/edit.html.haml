@@ -1,0 +1,31 @@
+= render 'home/header'
+.edit
+  .edit--box
+  = form_for @user do |f|
+    .edit--box__head
+      Edit
+    .edit--box__img
+      画像の選択
+      %ul
+      = f.submit 'click', class: 'edit__submit'
+    .edit--box__list
+      %ul
+        名前
+      %li
+        = f.text_field :name, placeholder: :名前, class:'name' 
+      %ul
+        誕生日
+      %li
+        = f.text_field :birthday, placeholder: :誕生日, class:'birthday' 
+      %ul
+        年齢
+      %li
+        = f.text_field :age, placeholder: :年齢, class:'age' 
+      %ul
+        コメント
+      %li
+        = f.text_area :comment, class: 'comment'
+    .edit--box__btn
+      = f.submit '更新する', class: 'submit'
+= render 'home/footer'
+    

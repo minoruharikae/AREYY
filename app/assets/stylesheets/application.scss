@@ -1,0 +1,100 @@
+@import "reset";
+@import "font-awesome-sprockets";
+@import "./font-awesome";
+@import "modules/home";
+@import "modules/brecelets";
+@import "modules/earrings";
+@import "modules/necklaces";
+@import "modules/piercings";
+@import "modules/rings";
+@import "modules/users";
+@import "modules/user.edit";
+@import "modules/login";
+
+
+//header
+@media screen and (max-width:1500px) {
+.header {
+  width: 100%;
+  background:#f5f5f5;
+  &--box {
+    display: flex;
+    padding: 20px;
+    height: 60px;
+    justify-content: space-between;
+    h1 {
+      font-size: 40px;
+      font-family: "Snell Roundhand";
+      
+    }
+    ul {
+      line-height: 50px;
+      .profile {
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        margin: 0 8px;
+      }
+      .exhibition {
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+      }
+      .out__btn {
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+      }
+    }
+    
+    .top {
+      color: black;
+      text-decoration: none;
+    }
+  }
+ }
+}
+
+//  スマホ対応
+@media screen and (max-width:480px) {
+  .header {
+    width: 100%;
+    background:#f5f5f5;
+    &--box {
+      display: flex;
+      padding: 5px;
+      height: 60px;
+      justify-content: space-between;
+      h1 {
+        font-size: 16px;
+        font-family: "Snell Roundhand";
+        
+      }
+      ul {
+        line-height: 50px;
+        font-size: 5px;
+        .profile {
+          text-decoration: none;
+          color: black;
+          display: inline-block;
+          margin: 0 4px;
+        }
+        .exhibition {
+          text-decoration: none;
+          color: black;
+          display: inline-block;
+        }
+        .out__btn {
+          text-decoration: none;
+          color: black;
+          display: inline-block;
+        }
+      }
+      
+      .top {
+        color: black;
+        text-decoration: none;
+      }
+    }
+   }
+}

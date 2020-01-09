@@ -1,0 +1,188 @@
+// マイページ
+
+@media screen and (max-width:1500px) {
+.mypage {
+  width: 100%;
+  font-family: "Snell Roundhand";
+  &--main {
+   margin: 40px;
+   &__box {
+     display: inline-block;
+     width: 70%;
+     &__head {
+       font-size: 2em;
+       padding: 5px;
+       background:ghostwhite;
+       h1 {
+        margin-left: calc(70% - 110px);
+       }
+     }
+     &__content {
+       width: 100%;
+       background-repeat: no-repeat;
+       background-size: 100%;
+       display: inline-block;
+       ul {
+        margin: 5%;
+        font-size: 28px;
+        }
+        li{
+          margin: 5% 20% 5%;
+          font-size: 24px;
+          list-style: none;
+       }
+       h2 {
+        margin: 5%;
+        font-size: 28px;
+       }
+       text {
+       }
+     }
+   }
+   &__side {
+     float: right;
+     width: 25%;
+     height: 80vh;
+     &__img {
+      width: 100%;
+      height: 30vh;
+      background-image: url(ring);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+      overflow: hidden;
+     }
+    &__list {
+      width: 100%;
+      &__edit {
+        padding: 2px 0;
+        font-size: 18px;
+        .editpath {
+          color: black;
+          text-decoration: none;
+        }
+      }
+      .pier_exhibition {
+        text-decoration: none;
+        color: red;
+      }
+      .earr_exhibition {
+        text-decoration: none;
+        color: gold;
+      }
+      .ring_exhibition {
+        text-decoration: none;
+        color: blueviolet;
+      }
+      .brece_exhibition {
+        text-decoration: none;
+        color: darkgreen;
+      }
+      .nac_exhibition {
+        text-decoration: none;
+        color: midnightblue;
+      }
+     }
+    }
+   }
+  }
+}
+
+
+// ここから携帯対応
+
+@media screen and (max-width:480px) {
+  .mypage {
+    width: 100%;
+    font-family: "Snell Roundhand";
+    &--main {
+     margin: 10px;
+     &__box {
+       display: inline-block;
+       width: 70%;
+       height: 100vh;
+       &__head {
+         font-size: 12px;
+         padding: 5px;
+         background:ghostwhite;
+         h1 {
+          margin-left: calc(70% - 110px);
+         }
+       }
+       &__content {
+         width: 100%;
+         height: 100%;
+         background-repeat: no-repeat;
+         background-size: 100%;
+         display: inline-block;
+         ul {
+          margin: 5%;
+          font-size: 10px;
+          }
+          li{
+            margin: 5% 20% 5%;
+            font-size: 10px;
+            list-style: none;
+         }
+         h2 {
+          margin: 5%;
+          font-size: 10px;
+         }
+         text {
+           font-size: 5px;
+         }
+       }
+     }
+     &__side {
+       float: right;
+       width: 25%;
+       height: 80vh;
+       &__img {
+        width: 100%;
+        height: 55px;
+        background-image: url(ring);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        overflow: hidden;
+       }
+      &__list {
+        width: 100%;
+        &__edit {
+          padding: 2px 0;
+          font-size: 10px;
+          .editpath {
+            color: black;
+            text-decoration: none;
+          }
+        }
+        .pier_exhibition {
+          text-decoration: none;
+          color: red;
+          font-size: 10px;
+        }
+        .earr_exhibition {
+          text-decoration: none;
+          color: gold;
+          font-size: 10px;
+        }
+        .ring_exhibition {
+          text-decoration: none;
+          color: blueviolet;
+          font-size: 10px;
+        }
+        .brece_exhibition {
+          text-decoration: none;
+          color: darkgreen;
+          font-size: 10px;
+        }
+        .nac_exhibition {
+          text-decoration: none;
+          color: midnightblue;
+          font-size: 10px;
+        }
+       }
+      }
+    }
+  }
+}

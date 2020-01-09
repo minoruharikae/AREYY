@@ -1,0 +1,234 @@
+//signup
+@media screen and (max-width:1500px) {
+  .signup {
+    width: 90%;
+    height: 100vh;
+    margin: 40px;
+    h2 {
+     width: 20%;
+     height: 14%;
+     text-align: center;
+     line-height: 2;
+     font-size: 32px;
+     color: indianred;
+     display: inline-block;
+     border: 1px solid indianred;
+    }
+    .field {
+      font-size: 24px;
+      color: lightcoral;
+      margin: 20px;
+      display: flex;
+      justify-content: space-between;
+      .from {
+        width: 60%;
+      }
+    }
+    .actions {
+      text-align: right;
+      margin: 20px;
+      .signup__btn {
+        width: 20%;
+        height: 40px;
+        background: coral;
+      }
+    }
+  }
+  .login__btn{
+    width: 10%;
+    height: 8%;
+    text-align: center;
+    line-height: 2;
+    font-size: 20px;
+    color: slategray;
+    display: inline-block;
+    border: 1px solid slategray;
+    text-decoration: none;
+    margin: 20px 0;
+  }
+}
+
+//ここからスマホ対応--------------------------------
+
+@media screen and (max-width:480px) {
+  .signup {
+    width: 95%;
+    height: 70vh;
+    margin: 10px;
+    h2 {
+     width: 20%;
+     height: 6%;
+     text-align: center;
+     line-height: 2;
+     font-size: 12px;
+     color: indianred;
+     display: inline-block;
+     border: 1px solid indianred;
+    }
+    .field {
+      width: 100%;
+      font-size: 10px;
+      color: lightcoral;
+      margin: 20px 5px 20px;
+      display: flex;
+      justify-content: space-between;
+      .from {
+        width: 60%;
+        border: 1px solid #eee;
+      }
+      .passfrom {
+        border: 1px solid #eee;
+      }
+    }
+    .actions {
+      text-align: right;
+      margin: 20px;
+      .signup__btn {
+        font-size: 12px;
+        width: 20%;
+        height: 30px;
+        background: coral;
+      }
+    }
+  }
+  .login__btn{
+    width: 10%;
+    height: 5%;
+    text-align: center;
+    line-height: 2;
+    font-size: 10px;
+    color: slategray;
+    display: inline-block;
+    border: 1px solid slategray;
+    text-decoration: none;
+    margin: 20px 0;
+  }
+}
+
+
+
+
+
+// ここからlogin---------------------------------
+@media screen and (max-width:1500px) {
+  .login {
+    width: 90%;
+    height: 70vh;
+    margin: 40px;
+    h2 {
+     width: 20%;
+     height: 14%;
+     text-align: center;
+     line-height: 2;
+     font-size: 32px;
+     color: indianred;
+     display: inline-block;
+     border: 1px solid indianred;
+    }
+    .field {
+      font-size: 24px;
+      color: lightcoral;
+      margin: 20px;
+      display: flex;
+      justify-content: space-between;
+      .from {
+        width: 60%;
+      }
+    }
+    .actions {
+      text-align: right;
+      margin: 20px;
+      .login__btn {
+        width: 20%;
+        height: 40px;
+        background: silver;
+      }
+    }
+  }
+  //shared/_links
+  .sign__btn {
+    width: 15%;
+    height: 14%;
+    text-align: center;
+    line-height: 2;
+    font-size: 20px;
+    color: slategray;
+    display: inline-block;
+    border: 1px solid slategray;
+    text-decoration: none;
+    margin: 20px 0;
+  }
+  .pass__btn {
+    width: 30%;
+    height: 14%;
+    text-align: center;
+    line-height: 2;
+    font-size: 20px;
+    color: slategray;
+    display: inline-block;
+    border: 1px solid slategray;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .login {
+    width: 95%;
+    height: 70vh;
+    margin: 10px;
+    h2 {
+     width: 12%;
+     height: 6%;
+     text-align: center;
+     line-height: 2;
+     font-size: 12px;
+     color: indianred;
+     display: inline-block;
+     border: 1px solid indianred;
+    }
+    .field {
+      font-size: 10px;
+      color: lightcoral;
+      margin: 12px 0 ;
+      display: flex;
+      justify-content: space-between;
+      .from {
+        width: 60%;
+      }
+    }
+    .actions {
+      text-align: right;
+      margin: 20px;
+      .login__btn {
+        font-size: 14px;
+        width: 20%;
+        height: 24px;
+        background: silver;
+      }
+    }
+  }
+  //shared/_links
+  .sign__btn {
+    width: 15%;
+    height: 14%;
+    text-align: center;
+    line-height: 2;
+    font-size: 10px;
+    color: slategray;
+    display: inline-block;
+    border: 1px solid slategray;
+    text-decoration: none;
+    margin: 20px 0;
+  }
+  .pass__btn {
+    width: 34%;
+    height: 14%;
+    text-align: center;
+    line-height: 2;
+    font-size: 10px;
+    color: slategray;
+    display: inline-block;
+    border: 1px solid slategray;
+    text-decoration: none;
+  }
+}

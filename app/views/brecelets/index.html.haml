@@ -1,0 +1,10 @@
+= render 'home/header'
+.brece
+  .brece__box
+  - @brecelet.each do |brecelet|
+    .brece__box--list
+      .brece__box--list--img
+        = link_to image_tag(src= "", class: "brece__box--list--img"), brecelet_path(brecelet.id)
+      .brece__box--list--date--show
+        = link_to "Details", brecelet_path(brecelet.id), class:'brecelet-show'
+= render 'home/footer'

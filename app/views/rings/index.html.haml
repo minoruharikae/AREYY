@@ -1,0 +1,10 @@
+= render 'home/header'
+.ring
+  .ring__box
+  - @ring.each do |ring|
+    .ring__box--list
+      .ring__box--list--img
+        = link_to image_tag(src= "ring.jpeg", class: "ring__box--list--img"), ring_path(ring.id)
+      .ring__box--list--date--show
+        = link_to "Details", ring_path(ring.id), class:'ring-show'
+= render 'home/footer'

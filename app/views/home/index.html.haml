@@ -1,0 +1,26 @@
+= render 'header'
+.home
+  .taste
+  .category
+    .category--main
+      .category--main__head
+        %ul
+          Accessories   
+      .category--main__items
+        .category--main__items__pierc
+          %ul
+            =link_to "Piercing", piercings_path, class:'piercing'
+        .category--main__items__earr
+          %ul
+            =link_to "Earring", earrings_path, class:'earring'
+      .category--main__box
+        .category--main__box__ring
+          %ul
+            =link_to "Ring", rings_path, class:'ring'
+        .category--main__box__brace
+          %ul
+            =link_to"Bracelet", brecelets_path, class:'bracelet'
+        .category--main__box__neck
+          %ul
+            =link_to"Necklace", necklaces_path, class:'necklace'
+  = render 'footer'

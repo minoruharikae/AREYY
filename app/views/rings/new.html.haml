@@ -1,0 +1,30 @@
+= render 'home/header'
+.newring
+  .newring__info
+  = form_for @ring do |f|
+    .newring__info--head
+      商品情報を入力してください
+    .newring__info--list
+      .newring__info--list--img
+        %li
+          = f.label "画像をアップロード"
+          = f.file_field :image
+      .newring__info--list--name
+        %li
+          = f.text_field :name, placeholder: :名前, class:'name' 
+      .newring__info--list--size
+        %li
+          = f.text_field :size, placeholder: :サイズ, class:'size' 
+      .newring__info--list--color
+        %li
+          = f.text_field :color, placeholder: :カラー, class:'color' 
+      .newring__info--list--price
+        %li
+          = f.text_field :price, placeholder: :値段, class:'price' 
+      .newring__info--list--explain
+        %li
+          = f.text_area :explain, placeholder: :備考, class:'explain' 
+      .newring__info--list--btn
+        %ul
+          = f.submit '出品する', class: 'submit'
+= render 'home/footer'

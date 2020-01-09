@@ -1,0 +1,10 @@
+= render 'home/header'
+.ear
+  .ear__box
+  - @earring.each do |earring|
+    .ear__box--list
+      .ear__box--list--img
+        = link_to image_tag(src= "ring.jpeg", class: "ear__box--list--img"), earring_path(earring.id)
+      .ear__box--list--date--show
+        = link_to "Details", earring_path(earring.id), class:'earring-show'
+= render 'home/footer'

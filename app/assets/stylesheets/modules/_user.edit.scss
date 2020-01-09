@@ -1,0 +1,111 @@
+@media screen and (max-width:1500px) {
+.edit {
+  margin: 5%;
+  &--box {
+    width: 100%;
+    &__head {
+      font-size: 24px;
+      text-align: center;
+      border: 1px solid #ccc;
+    }
+    &__img {
+      .edit__submit {
+        width: 70%;
+        font-size: 16px;
+        margin-left: 10%;
+        text-align: center;
+      }
+    }
+    &__list {
+      font-size: 24px;
+      li {
+        list-style: none;
+        margin-left: 10%;
+        .name {
+          width: 70%;
+        }
+        .birthday {
+          width: 30%;
+        }
+        .age {
+          width: 10%;
+        }
+        .comment {
+          width: 80%;
+          height: 30vh;
+        }
+      }
+    }
+    &__btn {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 16px;
+      .submit {
+        width: 50%;
+    }
+   }
+  }
+ }
+}
+
+
+//ここから携帯__________________________________
+
+@media screen and (max-width:480px) {
+  .edit {
+    margin: 2%;
+    height: 75vh;
+    &--box {
+      width: 100%;
+      &__head {
+        font-size: 16px;
+        text-align: center;
+        border: 1px solid #ccc;
+      }
+      &__img {
+        font-size: 10px;
+        .edit__submit {
+          width: 70%;
+          font-size: 16px;
+          margin-left: 10%;
+          border: 1px solid #eee;
+        }
+      }
+      &__list {
+        font-size: 10px;
+        li {
+          list-style: none;
+          margin-left: 10%;
+          .name {
+            width: 70%;
+            border: 1px solid #eee;
+          }
+          .birthday {
+            width: 30%;
+            border: 1px solid #eee;
+          }
+          .age {
+            width: 10%;
+            border: 1px solid #eee;
+          }
+          .comment {
+            width: 80%;
+            height: 30vh;
+            border: 1px solid #eee;
+          }
+        }
+      }
+      &__btn {
+        text-align: center;
+        margin-top: 24px;
+        font-size: 12px;
+        .submit {
+          width: 50%;
+          border: 1px solid #eee;
+      }
+     }
+    }
+   }
+  }
+  
+  

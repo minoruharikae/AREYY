@@ -1,0 +1,10 @@
+= render 'home/header'
+.nec
+  .nec__box
+  - @necklace.each do |necklace|
+    .nec__box--list
+      .nec__box--list--img
+        = link_to image_tag(src= "ring.jpeg", class: "nec__box--list--img"), necklace_path(necklace.id)
+      .nec__box--list--date--show
+        = link_to "Details", necklace_path(necklace.id), class:'c'
+= render 'home/footer'
