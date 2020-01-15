@@ -2,9 +2,11 @@
 .brece
   .brece__box
   - @brecelet.each do |brecelet|
-    .brece__box--list
-      .brece__box--list--img
-        = link_to image_tag(src= "", class: "brece__box--list--img"), brecelet_path(brecelet.id)
+    = link_to brecelet_path(brecelet.id),class: "brece__box--list" do
+      = image_tag brecelet.image, size:"160x100" ,class: 'brece__box--list--img'
       .brece__box--list--date--show
-        = link_to "Details", brecelet_path(brecelet.id), class:'brecelet-show'
+        = brecelet.name
+      .brece__box--list--date--price
+        ¥
+        = brecelet.price.to_s(:delimited)
 = render 'home/footer'

@@ -13,15 +13,19 @@
         &--img {
           width: 100%;
           height: 100%;
-          //background-image: url(ring);
           background-size: cover;
           display: inline-block;
           background-repeat: no-repeat;
         }
-        .piercing-show {
-          top:80%;
-          right: 0px;
-          color:red;
+        &--date--show{
+          width: 100%;
+          color:black;
+          display: inline-block;
+          text-decoration: none;
+        }
+        &--date--price {
+          color:black;
+          display: inline-block;
           text-decoration: none;
         }
        }
@@ -49,15 +53,22 @@
           &--img {
             width: 100%;
             height: 100%;
-            //background-image: url(ring);
             background-size: cover;
             display: inline-block;
             background-repeat: no-repeat;
           }
-          .brecelet-show {
-            color:darkgreen;
-            text-decoration: none;
+          &--date--show{
+            width: 100%;
+            color:black;
             font-size: 10px;
+            display: inline-block;
+            text-decoration: none;
+          }
+          &--date--price {
+            color:black;
+            font-size: 10px;
+            display: inline-block;
+            text-decoration: none;
           }
         }
       }
@@ -80,6 +91,12 @@
           height: 70vh;
           background-repeat: no-repeat;
           background-size: 100%;
+          .pc {
+            display: block !important;
+          }
+          .sp {
+           display: none !important;
+         }
         }
         &--head {
           width: 100%;
@@ -157,13 +174,14 @@
     }
   }
 
-//ここから携帯_________________________________________
+//ここからshow携帯_________________________________________
   @media screen and (max-width:480px) {
     .brecedate {
       width: 100%;
       font-family: "Snell Roundhand";
       &__box {
         margin: 0;
+        font-size: 10px;
         width: 100%;
         display: inline-block;
         &--img {
@@ -171,12 +189,18 @@
           height: 50vh;
           background-repeat: no-repeat;
           background-size: 100%;
+          .pc {
+            display: none !important;
+          }
+          .sp {
+            display: block !important;
+          }
         }
         &--head {
           width: 100%;
           height: 7vh;
           ul {
-            font-size: 20px;
+            font-size: 15px;
             height: 100%;
           }
         }
@@ -185,16 +209,16 @@
           list-style: none;
           p {
            padding: 5px;
-           font-size: 15px;
+           font-size: 10px;
           }
         }
         &--price {
           width: 100%;
-          font-size: 15px;
+          font-size: 10px;
           font-weight: bold;
           ul {
             display: inline-block;
-            font-size: 15px;
+            font-size: 10px;
             font-weight: bold;
           }
         }
@@ -205,11 +229,11 @@
           margin: 8px;
          ul {
            padding: 5px;
-           font-size: 15px;
+           font-size: 10px;
            display: inline-block;
          }
          li {
-           font-size:15px;
+           font-size:10px;
            display: inline-block;
          }
         }
@@ -270,9 +294,11 @@
         text-align: center;
         &--img {
           margin: 8px;
-          .image__submit {
-            width: 50%;
-            margin: 8px;
+          .uplode {
+            display: none;
+          }
+          .select {
+            width: 100px;
           }
         }
         &--name {
@@ -335,10 +361,12 @@
         text-align: center;
         &--img {
           margin: 8px;
-          .image__submit {
-            width: 50%;
-            margin: 10px;
+          .uplode {
+            display: none;
+          }
+          .select {
             font-size: 10px;
+            width: 30%;
             border: 1px solid #eee;
           }
         }

@@ -2,9 +2,11 @@
 .nec
   .nec__box
   - @necklace.each do |necklace|
-    .nec__box--list
-      .nec__box--list--img
-        = link_to image_tag(src= "ring.jpeg", class: "nec__box--list--img"), necklace_path(necklace.id)
+    = link_to necklace_path(necklace.id), class:"nec__box--list" do
+      = image_tag necklace.image, size:"160x100" , class:"nec__box--list--img"
       .nec__box--list--date--show
-        = link_to "Details", necklace_path(necklace.id), class:'c'
+        = necklace.name
+      .nec__box--list--date--price
+        ¥
+        = necklace.price.to_s(:delimited)
 = render 'home/footer'

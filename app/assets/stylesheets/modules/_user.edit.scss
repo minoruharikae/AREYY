@@ -9,11 +9,11 @@
       border: 1px solid #ccc;
     }
     &__img {
-      .edit__submit {
-        width: 70%;
-        font-size: 16px;
-        margin-left: 10%;
-        text-align: center;
+      .uplode {
+        display: none;
+      }
+      .select {
+        width: 14%;
       }
     }
     &__list {
@@ -64,10 +64,12 @@
       }
       &__img {
         font-size: 10px;
-        .edit__submit {
-          width: 70%;
-          font-size: 16px;
-          margin-left: 10%;
+        .uplode {
+          display: none;
+        }
+        .select {
+          font-size: 10px;
+          width: 27%;
           border: 1px solid #eee;
         }
       }

@@ -3,7 +3,8 @@
   .brecedate__box
     .brecedate__box--img
       - if @brecelet.image?
-        = image_tag @brecelet.image.url
+        = image_tag @brecelet.image, size:"1200x450",class:"pc"
+        = image_tag @brecelet.image, size:"320x150",class:"sp"
     .brecedate__box--head
       %ul
         Details

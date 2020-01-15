@@ -7,8 +7,8 @@
     .newnec__info--list
       .newnec__info--list--img
         %li
-          = f.label "画像をアップロード"
-          = f.file_field :image
+          = f.label "画像をアップロード",class:'uplode'
+          = f.file_field :image,class:'select'
       .newnec__info--list--name
         %li
           = f.text_field :name, placeholder: :名前, class:'name' 

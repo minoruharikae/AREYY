@@ -2,9 +2,11 @@
 .ear
   .ear__box
   - @earring.each do |earring|
-    .ear__box--list
-      .ear__box--list--img
-        = link_to image_tag(src= "ring.jpeg", class: "ear__box--list--img"), earring_path(earring.id)
+    = link_to earring_path(earring.id) ,class:"ear__box--list" do
+      =image_tag earring.image, size: "160x100" , class:"ear__box--list--img"
       .ear__box--list--date--show
-        = link_to "Details", earring_path(earring.id), class:'earring-show'
+        = earring.name
+      .ear__box--list--date--price
+        ¥
+        = earring.price.to_s(:delimited)
 = render 'home/footer'

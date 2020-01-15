@@ -7,7 +7,8 @@
     .edit--box__img
       画像の選択
       %ul
-      = f.submit 'click', class: 'edit__submit'
+        = f.label "画像をアップロード",class:'uplode'
+        = f.file_field :image,class:'select'
     .edit--box__list
       %ul
         名前

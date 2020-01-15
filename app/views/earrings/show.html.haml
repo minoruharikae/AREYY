@@ -3,7 +3,8 @@
   .earrdate__box
     .earrdate__box--img
       - if @earring.image?
-        = image_tag @earring.image.url
+        = image_tag @earring.image, size:"1200x450",class:"pc"
+        = image_tag @earring.image, size:"320x150",class:"sp"
     .earrdate__box--head
       %ul
         Details

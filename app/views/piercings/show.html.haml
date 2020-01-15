@@ -3,7 +3,8 @@
   .piercdate__box
     .piercdate__box--img
       - if @piercing.image?
-        = image_tag @piercing.image.url
+        = image_tag @piercing.image, size:"1200x450",class:"pc"
+        = image_tag @piercing.image, size:"320x150",class:"sp"
     .piercdate__box--head
       %ul
         Details

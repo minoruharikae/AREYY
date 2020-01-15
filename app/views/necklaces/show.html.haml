@@ -3,7 +3,8 @@
   .necdate__box
     .necdate__box--img
       - if @necklace.image?
-        = image_tag @necklace.image.url
+        = image_tag @necklace.image, size:"1200x450" ,class:'pc'
+        = image_tag @necklace.image, size:"320x150" ,class:'sp'
     .necdate__box--head
       %ul
         Details

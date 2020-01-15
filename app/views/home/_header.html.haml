@@ -4,8 +4,8 @@
       =link_to "AREYY", root_path ,class:'top'
     %ul
       - if user_signed_in?
+        = link_to "log out", destroy_user_session_path, method: :delete, class: "out__btn"
         = link_to "profile", user_path(current_user.id), class:"profile" 
-        = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "out__btn"
       - else
-        = link_to "ログイン", new_user_session_path, class: "in__btn"
-        = link_to "新規登録", new_user_registration_path, class: ""
+        = link_to "log in", new_user_session_path, class: "in__btn"
+        = link_to "sign up", new_user_registration_path, class: "new__menber"

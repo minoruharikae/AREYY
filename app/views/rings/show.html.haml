@@ -3,7 +3,8 @@
   .ringdate__box
     .ringdate__box--img
       - if @ring.image?
-        = image_tag @ring.image.url
+        = image_tag @ring.image,size:"1200x450",class:"pc"
+        = image_tag @ring.image,size:"320x150",class:"sp"
     .ringdate__box--head
       %ul
         Details

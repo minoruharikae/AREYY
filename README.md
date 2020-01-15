@@ -128,3 +128,7 @@ Things you may want to cover:
 
 ### Association
 - belongs_to :user
+
+
+
+https://github.com/minoruharikae/AREYY

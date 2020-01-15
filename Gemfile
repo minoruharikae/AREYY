@@ -61,9 +61,8 @@ gem "font-awesome-sass"
 gem 'pry-rails'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'fog-aws'
 
 group :production do
-
   gem 'pg'
-
 end
